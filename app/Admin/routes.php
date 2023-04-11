@@ -12,5 +12,7 @@ Route::group([
 ], function (Router $router) {
 
     $router->get('/', 'HomeController@index')->name('home');
+    $router->get('form', Setting::class);
+    $router->post('form',Setting::class);
 
 });
